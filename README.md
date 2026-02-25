@@ -18,7 +18,33 @@
 
 KeepassXC Cracker is an offensive security tool made by @r4shsec as a Proof-of-Concept (PoC) that a popular password manager, KeepassXC, is vulnerable to brute force attacks.
 
+## Installation ⚙️
+
+```bash
+git clone https://github.com/r4shsec/KeepassXC-Cracker.git
+cd KeepassXC-Cracker
+pip install -r requirements.txt
+```
+
 ## Usage ⚙️
 
 ```bash
+usage: keepass_cracker.py [-h] -f FILE -w WORDLIST
+
+An offensive security tool to break into KeepassXC databases.
+
+options:
+  -h, --help            show this help message and exit
+  -f, --file FILE       KeePassXC database file.
+  -w, --wordlist WORDLIST
+                        Crack the password from a wordlist.
 ```
+
+```
+python3 -f [keepass file] -w [wordlist file]
+```
+
+## Security Advisory 🛡️
+
+Always use **strong KeepassXC passwords** to secure your KeepassXC database against brute force attacks like this.
+
